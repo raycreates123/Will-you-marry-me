@@ -1,0 +1,57 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Will You Marry Me?</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: pink;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        button {
+            font-size: 22px;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background: lightgreen;
+        }
+
+        .yes2 {
+            background: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>💍 Will You Marry Me? 💍</h1>
+
+    <p>You only have two choices... 😭</p>
+
+    <button class="yes" onclick="answer()">YES ❤️</button>
+    <button class="yes2" onclick="answer()">YES 💍</button>
+
+    <script>
+        function answer() {
+            document.body.innerHTML = `
+                <h1>😭❤️ SHE SAID YES!!! 💍</h1>
+                <p>Best decision ever 😭</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
